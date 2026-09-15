@@ -1,0 +1,502 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #1A1A1A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.container{
+    background-color: black;
+    font-family: sans-serif;
+}
+
+ul{
+    display: flex;
+    color: aliceblue;
+    gap: 50px;
+    list-style: none;
+}
+
+.btncontact{
+    border: 2px solid gray;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.discover{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.leftdiscover{
+    width: 700px;
+    height: auto;
+}
+
+.rightdiscover{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+@media (max-width:1520px) {
+    .rightdiscover{
+        width: 100%;
+        height: auto;
+    }
+
+
+    .leftdiscover{
+        width: 100%;
+        height: auto;
+    }
+
+    .discover{
+        width: 100%;
+        height: auto;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width:775px) {
+    .rightdiscover{
+        width: 100%;
+        height: auto;
+    }
+
+
+    .leftdiscover{
+        width: 100%;
+        height: 500px;
+    }
+
+    .discover{
+        width: 100%;
+        height: auto;
+        display: flex;
+        /* flex-direction: column; */
+        padding-left: 10px;
+    }
+    
+    header{
+        display: flex;
+        flex-direction: column 
+    }
+}
+/* p */
+
+@media (max-width:900px) {
+    .discover{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+
+}
+@media (max-width:1000px) {
+    .rightdiscover{
+        width: 100%;
+        height: auto;
+    }
+
+    .leftdiscover{
+        width: 100%;
+        height: auto;
+    }
+
+    .discover{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+    }
+    
+    header{
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 50px;
+    }
+    
+    header{
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 20px;
+    }
+
+}
+
+@media (max-width:550px) {
+    .discoverboxlar{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header{
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 50px;
+    }
+}
+
+@media (max-width:410px) {
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+.btnsdiscover{
+    display: flex;
+    gap: 30px;
+}
+
+.btndiscover1{
+    background-color: black;
+    border: 1px solid grey;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.btndiscover2{
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+h2{
+    color: white;
+    font-size: 30px;
+}
+
+.discp{
+    color: gray;
+    padding-bottom: 20px;
+}
+
+.discoverboxlar{
+    padding-top: 30px;
+    display: flex;
+    /* background-color: aqua; */
+    gap: 30px;
+}
+.discoverbox{
+    border: 2px solid gray;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+/* iconboxlar */
+
+.iconboxlar{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 170px;
+    gap: 15px;
+    border: 5px solid #1A1A1A;
+}
+
+@media (max-width:1000px) {
+    .iconboxlar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2,170px);
+
+    }
+}
+
+@media (max-width:550px) {
+    .iconboxlar{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,170px);
+
+    }
+}
+
+.iconbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    background-color: #1A1A1A;
+    color: white;
+    text-align: center;
+}
+
+.icon{
+    width: 100px;
+    height: 100px;
+}
+
+.clientsay{
+    color: white;
+    font-size: 35px;
+    padding: 5px;
+    padding-top: 80px;
+}
+.clientstext{
+    color: gray;
+}
+
+.ourclients{
+    padding: 5px;
+}
+
+.ourclientssay{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.stars{
+    display: grid;
+    color: white;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+@media (max-width:1200px) {
+    .stars{
+      display: grid;
+      color: white;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+}
+
+.vote{
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.human{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.yulduz{
+    height: 40px;   
+    width: 240px;
+}
+
+.house{
+    padding: 5px;
+}
+
+.housetop{
+    color: white;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+
+.houseboxlar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.housebox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+.x3box{
+    display: flex;
+    gap: 10px;
+}
+
+.bed{
+    border: 2px solid grey;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.price{
+    padding-top: 10px;
+    display: flex;
+    gap: 30px;
+}
+.pricebtn{
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+}
+
+@media (max-width:1400px) {
+    .house{
+        width: 100%;
+        height: auto;
+    }
+    .housebox{
+        width: 100%;
+        height: auto;
+    }
+    .houseimg{
+        width: 100%;
+        height: 290px;
+    }
+}
+
+@media (max-width:1220px) {
+    .house{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .houseboxlar{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+
+@media (max-width:860px) {
+    .houseboxlar{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .housebox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+}
+
+.questiontop{
+color: white;
+padding: 20px;
+}
+
+.questiontopmain{
+    font-weight: bold;  
+    font-size: 30px;
+    padding-top: 80px;
+}
+.questionbutom{
+    color: white;  
+    padding-bottom: 40px;
+}
+
+.questionboxlar{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);  
+    gap: 30px;
+    padding-top: 20px;
+    padding: 0 50px;
+}
+
+@media (max-width:730px) {
+    .questionboxlar{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);  
+}
+}
+
+@media (max-width:530px) {
+    .questionboxlar{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);  
+}
+}
+
+.questionbox{
+    border: 1px solid grey;
+    padding: 20px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.questionbtn{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    background-color: black;
+    color: white;
+}
+
+.questionmain{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.lasthome{
+    display: flex;
+    gap: 20px;
+    background-color: #131212;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.lasthomeleft{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lasthomeright{
+    display: flex;
+    gap: 100px;
+    padding-left: 150px;
+    flex-wrap: wrap;
+}
+
+.lasthome ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
